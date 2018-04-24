@@ -4,7 +4,7 @@
   "author": "Francesco Strazzullo",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --watch & http-server",
+    "start": "http-server",
     "prebuild": "webpack -p",
     "build": "grunt",
     "server": " node server/start.js"
