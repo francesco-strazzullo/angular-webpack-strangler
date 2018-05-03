@@ -13,6 +13,8 @@ angular
       .otherwise({redirectTo: '/'})
   }])
 
+window.myAppContext.bindToAngular(angular, 'myApp')
+
 angular
   .element(document)
   .ready(function () {

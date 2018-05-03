@@ -3,7 +3,9 @@ angular
   .controller('ListController', ['$scope', 'tweets', '$location', function ($scope, tweets, $location) {
     $scope.list = []
     tweets.list().then(function (list) {
-      $scope.list = list
+      $scope.$apply(function () {
+        $scope.list = list
+      })
     })
 
     $scope.goToNewTweet = function () {
