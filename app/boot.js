@@ -7,8 +7,7 @@ angular
         controller: 'ListController'
       })
       .when('/tweet', {
-        templateUrl: 'app/templates/tweet.tpl.html',
-        controller: 'TweetController'
+        template: '<my-app-tweet-page></my-app-tweet-page>'
       })
       .otherwise({redirectTo: '/'})
   }])
