@@ -12,9 +12,3 @@ angular
       })
       .otherwise({redirectTo: '/'})
   }])
-
-angular
-  .element(document)
-  .ready(() => {
-    angular.bootstrap(document, ['myApp'])
-  })
