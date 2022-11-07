@@ -17,9 +17,11 @@ angular
         tweets.send({
           tweet: $scope.tweet
         }).then(() => {
-          $scope.tweet = ''
-          $scope.loading = false
-          $location.path('/')
+          $scope.$apply(() => {
+            $scope.tweet = ''
+            $scope.loading = false
+            $location.path('/')
+          })
         })
       }
     }])
